@@ -26,10 +26,6 @@
 
   function updateGallery() {
     const max = track.scrollWidth - track.clientWidth;
-    const first = clamp(Math.round(track.scrollLeft / step()));
-    const visible = Number(getComputedStyle(track).getPropertyValue('--visible-items'));
-    const end = Math.min(photos.length - 1, first + visible - 1);
-    document.querySelector('[data-gallery-range]').textContent = format(first) + (end > first ? '–' + format(end) : '');
     previous.disabled = track.scrollLeft < 3;
     next.disabled = max - track.scrollLeft < 3;
     document.querySelector('.gallery-progress>span').style.width = Math.min(100, (track.scrollLeft + track.clientWidth) / track.scrollWidth * 100) + '%';

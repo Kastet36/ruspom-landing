@@ -1,0 +1,67 @@
+[
+  {
+    "width": 1440,
+    "layout": true,
+    "photos": 13,
+    "arrows": true,
+    "keyboard": true,
+    "thumbnails": true,
+    "restoreScroll": true
+  },
+  {
+    "width": 1280,
+    "layout": true,
+    "photos": 13,
+    "arrows": true,
+    "keyboard": true,
+    "thumbnails": true,
+    "restoreScroll": true
+  },
+  {
+    "width": 768,
+    "layout": true,
+    "photos": 13,
+    "arrows": true,
+    "keyboard": true,
+    "thumbnails": true,
+    "restoreScroll": true
+  },
+  {
+    "width": 390,
+    "layout": true,
+    "photos": 13,
+    "arrows": true,
+    "keyboard": true,
+    "thumbnails": true,
+    "restoreScroll": true
+  },
+  {
+    "width": 360,
+    "layout": true,
+    "photos": 13,
+    "arrows": true,
+    "keyboard": true,
+    "thumbnails": true,
+    "restoreScroll": true
+  },
+  {
+    "mobileTouch": true,
+    "gallerySwipeBothDirections": true,
+    "viewerSwipeBothDirections": true,
+    "orientationPreservesPhoto": true
+  },
+  {
+    "desktopDragGallery": true,
+    "desktopDragViewer": true,
+    "reducedMotion": true,
+    "openLastPhoto": true
+  },
+  {
+    "width": 1440,
+    "approvedHeroStylesMatch": true
+  },
+  {
+    "width": 390,
+    "approvedHeroStylesMatch": true
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1440,
+    "openComparison": true,
+    "schematicsLoaded": true,
+    "materialFacts": true,
+    "keyboardDetails": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 1280,
+    "openComparison": true,
+    "schematicsLoaded": true,
+    "materialFacts": true,
+    "keyboardDetails": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 768,
+    "openComparison": true,
+    "schematicsLoaded": true,
+    "materialFacts": true,
+    "keyboardDetails": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 390,
+    "openComparison": true,
+    "schematicsLoaded": true,
+    "materialFacts": true,
+    "keyboardDetails": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 360,
+    "openComparison": true,
+    "schematicsLoaded": true,
+    "materialFacts": true,
+    "keyboardDetails": true,
+    "noHorizontalOverflow": true
+  }
+]

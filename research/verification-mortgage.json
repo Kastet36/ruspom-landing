@@ -1,0 +1,37 @@
+[
+  {
+    "width": 1440,
+    "pass": true,
+    "sectionOverflow": false,
+    "forms": false,
+    "galleryRetained": true
+  },
+  {
+    "width": 1280,
+    "pass": true,
+    "sectionOverflow": false,
+    "forms": false,
+    "galleryRetained": true
+  },
+  {
+    "width": 768,
+    "pass": true,
+    "sectionOverflow": false,
+    "forms": false,
+    "galleryRetained": true
+  },
+  {
+    "width": 390,
+    "pass": true,
+    "sectionOverflow": false,
+    "forms": false,
+    "galleryRetained": true
+  },
+  {
+    "width": 360,
+    "pass": true,
+    "sectionOverflow": false,
+    "forms": false,
+    "galleryRetained": true
+  }
+]

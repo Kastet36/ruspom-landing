@@ -1,11 +1,21 @@
-# Изображения и шрифты
+# Материалы текущих концепций
 
-- `assets/house-concept.webp`: временная визуализация дома, созданная встроенным image_gen. Не является фотографией реального объекта. Оригинал сохранён в `research/house-concept-original.png`. Во всех трёх вариантах используется одно изображение.
-- `assets/preview-01.webp`, `preview-02.webp`, `preview-03.webp`: скриншоты наших концепций для страницы сравнения.
-- `assets/references/`: скриншоты первых экранов шести сайтов, использованы только для исследования и критического разбора. Авторы и прямые ссылки указаны рядом с каждым примером на странице исследования. Не используются как фотографии объектов Русских поместий.
-- Manrope и Prata: локальные шрифты из Google Fonts. Лицензии SIL OFL находятся в `licenses/`.
-- Официальный логотип пока не предоставлен. В макетах нет самодельного логотипа, только обычное название компании.
+## Фотографии
 
-## Запрос для временной визуализации
+`assets/photos/house-01.webp` … `house-14.webp` получены из предоставленных пользователем файлов `/root/Русские поместья/Фото/1-processed.png` … `14-processed.png` соответственно. Оригиналы не изменены. Рабочие копии уменьшены до 1920 px по длинной стороне и сжаты в WebP (quality 88). Геометрия домов, цветовые решения, окружение и водяные знаки сохранены. Генеративная ретушь не применялась.
 
-Use case: photorealistic-natural. Asset type: temporary architectural hero photograph for a Russian timber-frame house builder visual concept, clearly marked as an illustration in the consuming webpage. Generate one beautiful high-resolution wide landscape 3:2 image, architectural editorial photography, very realistic but no claim of a real project. A modest and attainable modern one-storey timber-frame family house approximately 100 square metres in a northern European pine and birch forest, pale warm natural vertical wood cladding, charcoal standing-seam gabled roof, large wide living room glazing, simple timber terrace with two chairs. Entire building fully visible in three-quarter view including gable and long facade. Warm daylight in late summer, natural soft sunlight, calm unpretentious everyday country living, lightly wild meadow grass with small gravel path, tall slender pines frame the home. Camera at eye level, wide 28mm perspective with accurate undistorted building geometry, straight structural lines. House occupies the middle and right two-thirds with quiet dark pine foliage and natural shadow in the left one-third suitable for optional white overlay text. No gigantic luxury villa, no flat roof, no swimming pool, no people, no cars, no text, no logos, no UI, no watermarks. Crisp restrained natural colours, documentary photographic texture, not oversaturated, no excessive bloom. Landscape aspect ratio 3:2.
+Первый экран 01: фото 8. Первый экран 02: фото 9. Первый экран 03: фото 12.
+
+## Официальный логотип
+
+`assets/logo-official.png` — точная копия предоставленного пользователем `Логотип/лого_1.png`, 1452 × 384 px. Не перерисован и не перекрашен.
+
+## Шрифты
+
+Manrope, Prata и Oswald локально подключены из Google Fonts. Лицензии SIL OFL находятся в `licenses/`.
+
+## Скриншоты концепций
+
+`assets/concept-01-preview.webp` … `concept-03-preview.webp` — скриншоты первых двух секций соответствующих вариантов для страницы сравнения.
+
+Старое сгенерированное изображение и скриншоты раннего исследования в этой папке относятся к прежним черновикам и в текущем дизайне не используются.

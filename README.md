@@ -2,27 +2,27 @@
 
 Только визуальное согласование. Во всех трёх вариантах одинаковый текст из исходного файла. Форм нет. Старая версия полного лендинга в этот репозиторий не включена.
 
-- `site/index.html` — обзор трёх концепций.
-- `site/variants/01.html` — светлая композиция с фото справа. Рекомендуемый вариант.
-- `site/variants/02.html` — фото на весь экран и контрастный текст.
-- `site/variants/03.html` — тёплая журнальная композиция и антиква.
-- `site/research.html` — шесть российских и зарубежных примеров, выводы и рекомендация.
+- `index.html` — обзор трёх концепций.
+- `variants/01.html` — светлая композиция с фото справа. Рекомендуемый вариант.
+- `variants/02.html` — фото на весь экран и контрастный текст.
+- `variants/03.html` — тёплая журнальная композиция и антиква.
+- `research.html` — шесть российских и зарубежных примеров, выводы и рекомендация.
 - `content.json` — дословные тексты первого экрана для сверки.
 - `research/source-text.txt` — исходный файл со структурой.
 
 ## Просмотр
 
 ```sh
-python3 -m http.server 8080 --directory site
+python3 -m http.server 8080
 ```
 
 Затем открыть http://localhost:8080.
 
 ## GitHub Pages
 
-Один раз выбрать Settings → Pages → Build and deployment → Source → GitHub Actions. Workflow `.github/workflows/pages.yml` публикует `site/` при каждом push в `main`. Если первый workflow завершился до включения Pages, повторно запустить его во вкладке Actions или сделать следующий push. SSH-ключ позволяет отправлять код, но не менять настройки Pages через API.
+Публикация настроена из ветки `main`, папка `/ (root)`. Статические страницы находятся в корне репозитория, `.nojekyll` отключает обработку Jekyll. Каждый push в `main` автоматически обновляет опубликованные концепции через стандартную публикацию GitHub Pages. Дополнительный workflow не нужен.
 
-Ожидаемый адрес после включения Pages и успешного деплоя: https://kastet36.github.io/ruspom-landing/ . Наличие этого адреса в README не подтверждает публикацию.
+Адрес: https://kastet36.github.io/ruspom-landing/ .
 
 [Официальная инструкция GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 

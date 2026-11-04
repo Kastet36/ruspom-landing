@@ -175,6 +175,108 @@
   mouseDrag(track, step);
   mouseDrag(viewerTrack, () => viewerTrack.clientWidth);
 
+  const videoTrack = document.querySelector('.video-track');
+  const videoPrevious = document.querySelector('[data-video-prev]');
+  const videoNext = document.querySelector('[data-video-next]');
+  const videoDialog = document.querySelector('.video-viewer');
+  let videos = [...videoTrack.querySelectorAll('.video-card')].map(card => ({
+    title: 'Видеоотзыв', poster: card.querySelector('img').getAttribute('src'), embedUrl: null
+  }));
+  let videoOrigin;
+  let videoScroll = 0;
+  let videoFrame;
+  const videoStep = () => videoTrack.children.length > 1
+    ? videoTrack.children[1].offsetLeft - videoTrack.children[0].offsetLeft
+    : videoTrack.clientWidth;
+
+  function updateVideos() {
+    videoPrevious.disabled = videoTrack.scrollLeft < 3;
+    videoNext.disabled = videoTrack.scrollWidth - videoTrack.clientWidth - videoTrack.scrollLeft < 3;
+    document.querySelector('.video-progress>span').style.width = Math.min(100,
+      (videoTrack.scrollLeft + videoTrack.clientWidth) / videoTrack.scrollWidth * 100) + '%';
+  }
+  function moveVideo(direction) {
+    const index = Math.round(videoTrack.scrollLeft / videoStep()) + direction;
+    videoTrack.scrollTo({ left: Math.max(0, Math.min(videos.length - 1, index)) * videoStep(), behavior: behavior(false) });
+  }
+  videoPrevious.addEventListener('click', () => moveVideo(-1));
+  videoNext.addEventListener('click', () => moveVideo(1));
+  videoTrack.addEventListener('scroll', () => {
+    cancelAnimationFrame(videoFrame);
+    videoFrame = requestAnimationFrame(updateVideos);
+  }, { passive: true });
+  videoTrack.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    moveVideo(event.key === 'ArrowLeft' ? -1 : 1);
+  });
+  mouseDrag(videoTrack, videoStep);
+  new ResizeObserver(updateVideos).observe(videoTrack);
+  updateVideos();
+
+  fetch('assets/cinema/videos.json').then(response => {
+    if (!response.ok) throw new Error('Video data unavailable');
+    return response.json();
+  }).then(items => {
+    if (!Array.isArray(items) || !items.length) return;
+    const template = videoTrack.querySelector('.video-card');
+    if (!template) return;
+    videos = items;
+    videoTrack.replaceChildren(...items.map((item, index) => {
+      const card = template.cloneNode(true);
+      const button = card.querySelector('[data-video]');
+      button.dataset.video = String(index);
+      button.setAttribute('aria-label', item.embedUrl ? 'Смотреть: ' + item.title : item.title + ': видео скоро');
+      card.querySelector('img').src = item.poster;
+      card.querySelector('figcaption>span').textContent = item.title;
+      card.querySelector('.video-soon').hidden = Boolean(item.embedUrl);
+      return card;
+    }));
+    updateVideos();
+  }).catch(() => { /* The static placeholder gallery remains available. */ });
+
+  videoTrack.addEventListener('click', event => {
+    const button = event.target.closest('[data-video]');
+    if (!button) return;
+    const item = videos[Number(button.dataset.video)];
+    if (!item?.embedUrl) {
+      showNotice('Видео появится здесь после добавления.');
+      return;
+    }
+    let url;
+    try { url = new URL(item.embedUrl); } catch { return; }
+    if (url.protocol !== 'https:' || !['vk.com', 'vkvideo.ru'].includes(url.hostname) || url.pathname !== '/video_ext.php') return;
+    const frame = document.createElement('iframe');
+    frame.src = url.href;
+    frame.title = item.title;
+    frame.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+    frame.allowFullscreen = true;
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    videoDialog.querySelector('.video-player').replaceChildren(frame);
+    videoDialog.querySelector('.video-viewer-title').textContent = item.title;
+    videoOrigin = button;
+    videoScroll = window.scrollY;
+    document.documentElement.classList.add('viewer-open');
+    document.body.style.position = 'fixed';
+    document.body.style.top = -videoScroll + 'px';
+    document.body.style.width = '100%';
+    videoDialog.showModal();
+    videoDialog.querySelector('.video-close').focus({ preventScroll: true });
+  });
+  videoDialog.querySelector('.video-close').addEventListener('click', () => videoDialog.close());
+  videoDialog.addEventListener('close', () => {
+    videoDialog.querySelector('.video-player').replaceChildren();
+    document.documentElement.classList.remove('viewer-open');
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    const old = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo(0, videoScroll);
+    document.documentElement.style.scrollBehavior = old;
+    videoOrigin?.focus({ preventScroll: true });
+  });
+
   const observer = new ResizeObserver(() => {
     updateGallery();
     if (dialog.open) viewerTrack.scrollTo({ left: active * viewerTrack.clientWidth, behavior: 'auto' });
@@ -185,15 +287,20 @@
 
   const notice = document.querySelector('.preview-notice');
   let timer;
-  document.querySelectorAll('[data-catalog],[data-planned]').forEach(button => {
+  function showNotice(message) {
+    notice.textContent = message;
+    notice.classList.add('visible');
+    clearTimeout(timer);
+    timer = setTimeout(() => notice.classList.remove('visible'), 5000);
+  }
+  document.querySelectorAll('[data-catalog]').forEach(button => {
     button.addEventListener('click', event => {
       event.preventDefault();
-      notice.textContent = button.hasAttribute('data-catalog')
-        ? 'Сейчас согласовываем оформление. Получение каталога подключим после согласования.'
-        : 'Этот раздел добавим на следующем этапе. Сейчас готовы первые два экрана.';
-      notice.classList.add('visible');
-      clearTimeout(timer);
-      timer = setTimeout(() => notice.classList.remove('visible'), 5000);
+      document.querySelector('#catalogue').scrollIntoView({ behavior: behavior(false), block: 'start' });
+      document.querySelector('#catalogue-title').focus({ preventScroll: true });
     });
+  });
+  document.querySelector('[data-catalog-request]').addEventListener('click', () => {
+    showNotice('Получение каталога подключим после согласования.');
   });
 })();

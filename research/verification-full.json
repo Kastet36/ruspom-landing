@@ -1,0 +1,72 @@
+[
+  {
+    "width": 1440,
+    "sections": 9,
+    "noHorizontalOverflow": true,
+    "sourceHeroText": true,
+    "photoGallery": true,
+    "videoGallery": true,
+    "catalogueNavigation": true,
+    "contactsWithoutMap": true,
+    "noForms": true
+  },
+  {
+    "width": 1280,
+    "sections": 9,
+    "noHorizontalOverflow": true,
+    "sourceHeroText": true,
+    "photoGallery": true,
+    "videoGallery": true,
+    "catalogueNavigation": true,
+    "contactsWithoutMap": true,
+    "noForms": true
+  },
+  {
+    "width": 768,
+    "sections": 9,
+    "noHorizontalOverflow": true,
+    "sourceHeroText": true,
+    "photoGallery": true,
+    "videoGallery": true,
+    "catalogueNavigation": true,
+    "contactsWithoutMap": true,
+    "noForms": true
+  },
+  {
+    "width": 390,
+    "sections": 9,
+    "noHorizontalOverflow": true,
+    "sourceHeroText": true,
+    "photoGallery": true,
+    "videoGallery": true,
+    "catalogueNavigation": true,
+    "contactsWithoutMap": true,
+    "noForms": true
+  },
+  {
+    "width": 360,
+    "sections": 9,
+    "noHorizontalOverflow": true,
+    "sourceHeroText": true,
+    "photoGallery": true,
+    "videoGallery": true,
+    "catalogueNavigation": true,
+    "contactsWithoutMap": true,
+    "noForms": true
+  },
+  {
+    "nativeVideoSwipeBothDirections": true,
+    "noAccidentalVideoOpen": true
+  },
+  {
+    "desktopVideoDrag": true,
+    "noAccidentalVideoOpen": true
+  },
+  {
+    "vkPlayerFixture": true,
+    "lazyPlayerCreation": true,
+    "playerRemovedOnClose": true,
+    "videoDataControlsCardCount": true,
+    "restoreScrollAndFocus": true
+  }
+]

@@ -303,4 +303,69 @@
   document.querySelector('[data-catalog-request]').addEventListener('click', () => {
     showNotice('Получение каталога подключим после согласования.');
   });
+
+  const comparison = document.querySelector('[data-finish-comparison]');
+  if (!comparison) return;
+  const comparisonRange = comparison.querySelector('.finish-range');
+  const beforeLabel = comparison.querySelector('.finish-state-before');
+  const afterLabel = comparison.querySelector('.finish-state-after');
+  let comparisonDrag;
+
+  function reveal(value) {
+    const amount = Math.max(0, Math.min(100, Math.round(Number(value))));
+    comparisonRange.value = String(amount);
+    comparison.style.setProperty('--reveal', amount + '%');
+    comparisonRange.setAttribute('aria-valuetext', amount === 0
+      ? 'С отделкой — всё изображение'
+      : amount === 100 ? 'Тёплый контур — всё изображение'
+        : 'Тёплый контур — ' + amount + ' процентов изображения, с отделкой — ' + (100 - amount) + ' процентов');
+    beforeLabel.style.opacity = String(Math.min(1, amount / 16));
+    afterLabel.style.opacity = String(Math.min(1, (100 - amount) / 16));
+  }
+  function revealAt(clientX) {
+    const bounds = comparison.getBoundingClientRect();
+    reveal((clientX - bounds.left) / bounds.width * 100);
+  }
+  comparisonRange.addEventListener('input', () => reveal(comparisonRange.value));
+  comparison.addEventListener('pointerdown', event => {
+    if (event.pointerType === 'mouse' && event.button !== 0) return;
+    comparisonDrag = { id: event.pointerId, x: event.clientX, y: event.clientY, active: event.pointerType === 'mouse' };
+    if (comparisonDrag.active) {
+      event.preventDefault();
+      comparison.setPointerCapture(event.pointerId);
+      comparison.classList.add('is-dragging');
+      comparisonRange.focus({ preventScroll: true });
+      revealAt(event.clientX);
+    }
+  });
+  comparison.addEventListener('pointermove', event => {
+    if (!comparisonDrag || comparisonDrag.id !== event.pointerId) return;
+    if (!comparisonDrag.active) {
+      const dx = Math.abs(event.clientX - comparisonDrag.x);
+      const dy = Math.abs(event.clientY - comparisonDrag.y);
+      if (dy > 8 && dy > dx) { comparisonDrag = null; return; }
+      if (dx < 8 || dx <= dy) return;
+      comparisonDrag.active = true;
+      comparison.setPointerCapture(event.pointerId);
+      comparison.classList.add('is-dragging');
+      comparisonRange.focus({ preventScroll: true });
+    }
+    event.preventDefault();
+    revealAt(event.clientX);
+  });
+  function endComparisonDrag(event) {
+    if (!comparisonDrag || comparisonDrag.id !== event.pointerId) return;
+    if (event.type === 'pointerup') revealAt(event.clientX);
+    if (comparison.hasPointerCapture(event.pointerId)) comparison.releasePointerCapture(event.pointerId);
+    comparisonDrag = null;
+    comparison.classList.remove('is-dragging');
+  }
+  comparison.addEventListener('pointerup', endComparisonDrag);
+  comparison.addEventListener('pointercancel', endComparisonDrag);
+  comparison.addEventListener('lostpointercapture', () => {
+    comparisonDrag = null;
+    comparison.classList.remove('is-dragging');
+  });
+  comparison.addEventListener('dragstart', event => event.preventDefault());
+  reveal(comparisonRange.value);
 })();

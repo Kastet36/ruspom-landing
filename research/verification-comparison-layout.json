@@ -1,0 +1,114 @@
+[
+  {
+    "width": 1920,
+    "height": 1080,
+    "sectionHeight": 816,
+    "imageWidth": 875,
+    "imageHeight": 492,
+    "samePageGrid": true,
+    "descriptions": "left and right",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "sectionHeight": 720,
+    "imageWidth": 720,
+    "imageHeight": 405,
+    "samePageGrid": true,
+    "descriptions": "left and right",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "sectionHeight": 696,
+    "imageWidth": 683,
+    "imageHeight": 384,
+    "samePageGrid": true,
+    "descriptions": "left and right",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "sectionHeight": 668,
+    "imageWidth": 639,
+    "imageHeight": 360,
+    "samePageGrid": true,
+    "descriptions": "left and right",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "sectionHeight": 585,
+    "imageWidth": 506,
+    "imageHeight": 285,
+    "samePageGrid": true,
+    "descriptions": "left and right",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "sectionHeight": 839,
+    "imageWidth": 728,
+    "imageHeight": 455,
+    "samePageGrid": true,
+    "descriptions": "below image",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "sectionHeight": 697,
+    "imageWidth": 350,
+    "imageHeight": 219,
+    "samePageGrid": true,
+    "descriptions": "below image",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "width": 360,
+    "height": 640,
+    "sectionHeight": 673,
+    "imageWidth": 320,
+    "imageHeight": 200,
+    "samePageGrid": true,
+    "descriptions": "below image",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "sectionHeight": 886,
+    "imageWidth": 755,
+    "imageHeight": 425,
+    "samePageGrid": true,
+    "descriptions": "below image",
+    "noOverflow": true,
+    "mouseAndKeyboard": true,
+    "details": true
+  },
+  {
+    "touchBothDirections": true,
+    "verticalScrollPreserved": true
+  }
+]

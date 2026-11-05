@@ -86,6 +86,7 @@
   {
     "otherEightSectionsUnchanged": true,
     "originalPhotoPreserved": true,
-    "realFloorPlanUnavailable": true
+    "floorPlanIncluded": false,
+    "projectSpecificDetailsAdded": false
   }
 ]

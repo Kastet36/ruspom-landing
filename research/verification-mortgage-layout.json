@@ -1,0 +1,295 @@
+{
+  "checkedAt": "2026-11-05T18:44:36.078Z",
+  "results": [
+    {
+      "width": 320,
+      "columns": "255px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 25,
+          "y": 3367.859375,
+          "width": 255,
+          "height": 120
+        },
+        {
+          "x": 25,
+          "y": 3487.859375,
+          "width": 255,
+          "height": 165
+        },
+        {
+          "x": 25,
+          "y": 3652.859375,
+          "width": 255,
+          "height": 154
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "columns": "310px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 25,
+          "y": 3351.875,
+          "width": 310,
+          "height": 120
+        },
+        {
+          "x": 25,
+          "y": 3471.875,
+          "width": 310,
+          "height": 165
+        },
+        {
+          "x": 25,
+          "y": 3636.875,
+          "width": 310,
+          "height": 154
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "columns": "325px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 25,
+          "y": 3395.96875,
+          "width": 325,
+          "height": 128
+        },
+        {
+          "x": 25,
+          "y": 3523.96875,
+          "width": 325,
+          "height": 165
+        },
+        {
+          "x": 25,
+          "y": 3688.96875,
+          "width": 325,
+          "height": 154
+        }
+      ]
+    },
+    {
+      "width": 620,
+      "columns": "550.469px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 27.265625,
+          "y": 539.703125,
+          "width": 550.46875,
+          "height": 128
+        },
+        {
+          "x": 27.265625,
+          "y": 667.703125,
+          "width": 550.46875,
+          "height": 165
+        },
+        {
+          "x": 27.265625,
+          "y": 832.703125,
+          "width": 550.46875,
+          "height": 154
+        }
+      ]
+    },
+    {
+      "width": 780,
+      "columns": "696.375px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 34.3125,
+          "y": 519.1875,
+          "width": 696.375,
+          "height": 128
+        },
+        {
+          "x": 34.3125,
+          "y": 647.1875,
+          "width": 696.375,
+          "height": 165
+        },
+        {
+          "x": 34.3125,
+          "y": 812.1875,
+          "width": 696.375,
+          "height": 154
+        }
+      ]
+    },
+    {
+      "width": 781,
+      "columns": "223.906px 223.906px 250.781px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 33.703125,
+          "y": 264.53125,
+          "width": 223.90625,
+          "height": 159.953125
+        },
+        {
+          "x": 257.609375,
+          "y": 264.53125,
+          "width": 223.90625,
+          "height": 159.953125
+        },
+        {
+          "x": 481.515625,
+          "y": 264.53125,
+          "width": 250.78125,
+          "height": 159.953125
+        }
+      ]
+    },
+    {
+      "width": 1000,
+      "columns": "287.922px 287.938px 322.484px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 43.328125,
+          "y": 463.34375,
+          "width": 287.921875,
+          "height": 153.59375
+        },
+        {
+          "x": 331.25,
+          "y": 463.34375,
+          "width": 287.9375,
+          "height": 153.59375
+        },
+        {
+          "x": 619.1875,
+          "y": 463.34375,
+          "width": 322.484375,
+          "height": 153.59375
+        }
+      ]
+    },
+    {
+      "width": 1180,
+      "columns": "340.531px 340.547px 381.422px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 51.25,
+          "y": 223.875,
+          "width": 340.53125,
+          "height": 153.59375
+        },
+        {
+          "x": 391.78125,
+          "y": 223.875,
+          "width": 340.546875,
+          "height": 153.59375
+        },
+        {
+          "x": 732.328125,
+          "y": 223.875,
+          "width": 381.421875,
+          "height": 153.59375
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "columns": "416.531px 416.547px 466.547px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 62.6875,
+          "y": 510.59375,
+          "width": 416.53125,
+          "height": 159
+        },
+        {
+          "x": 479.21875,
+          "y": 510.59375,
+          "width": 416.546875,
+          "height": 159
+        },
+        {
+          "x": 895.765625,
+          "y": 510.59375,
+          "width": 466.546875,
+          "height": 159
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "columns": "506.406px 506.406px 567.188px",
+      "overflow": false,
+      "sectionOverflow": false,
+      "childrenOverflow": [],
+      "headingMatches": true,
+      "cta": "tel:+78124256667",
+      "boxes": [
+        {
+          "x": 162.5,
+          "y": 250.234375,
+          "width": 506.40625,
+          "height": 159
+        },
+        {
+          "x": 668.90625,
+          "y": 250.234375,
+          "width": 506.40625,
+          "height": 159
+        },
+        {
+          "x": 1175.3125,
+          "y": 250.234375,
+          "width": 567.1875,
+          "height": 159
+        }
+      ]
+    }
+  ]
+}

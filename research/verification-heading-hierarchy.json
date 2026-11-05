@@ -1,0 +1,221 @@
+{
+  "mainHeadingAlwaysLargerAndHeavier": true,
+  "results": [
+    {
+      "width": 1920,
+      "heading": {
+        "size": 54,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 40,
+          "weight": 600
+        },
+        {
+          "size": 40,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "heading": {
+        "size": 46.08,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 37.44,
+          "weight": 600
+        },
+        {
+          "size": 37.44,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "heading": {
+        "size": 40.96,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 33.28,
+          "weight": 600
+        },
+        {
+          "size": 33.28,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "heading": {
+        "size": 34,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 28,
+          "weight": 600
+        },
+        {
+          "size": 28,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1001,
+      "heading": {
+        "size": 34,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 28,
+          "weight": 600
+        },
+        {
+          "size": 28,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1000,
+      "heading": {
+        "size": 34,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 30,
+          "weight": 600
+        },
+        {
+          "size": 30,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "heading": {
+        "size": 36,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 26,
+          "weight": 600
+        },
+        {
+          "size": 26,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 621,
+      "heading": {
+        "size": 36,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 26,
+          "weight": 600
+        },
+        {
+          "size": 26,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 620,
+      "heading": {
+        "size": 36,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 28,
+          "weight": 600
+        },
+        {
+          "size": 28,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "heading": {
+        "size": 28.86,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 24.18,
+          "weight": 600
+        },
+        {
+          "size": 24.18,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "heading": {
+        "size": 28,
+        "weight": 700
+      },
+      "subheadings": [
+        {
+          "size": 24,
+          "weight": 600
+        },
+        {
+          "size": 24,
+          "weight": 600
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "livingBlockCopyAndMarkupUnchanged": true,
+  "heroHeadingAndBodyUnchanged": true,
+  "additionalChecks": [
+    {
+      "width": 1440,
+      "heroEyebrowAbsent": true,
+      "galleryHeadingExact": true,
+      "galleryNavigation": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "heroEyebrowAbsent": true,
+      "galleryHeadingExact": true,
+      "galleryNavigation": true,
+      "noOverflow": true
+    }
+  ]
+}

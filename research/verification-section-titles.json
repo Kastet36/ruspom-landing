@@ -1,0 +1,119 @@
+{
+  "singleSharedClass": "section-title",
+  "heroExcluded": true,
+  "copyUnchanged": true,
+  "results": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "allEightIdentical": true,
+      "headingStyle": {
+        "fontFamily": "Manrope, Arial, sans-serif",
+        "fontSize": "54px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "lineHeight": "59.4px",
+        "letterSpacing": "-2.16px",
+        "color": "rgb(241, 235, 223)"
+      },
+      "mainHeadingLargerThanSubheadings": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "allEightIdentical": true,
+      "headingStyle": {
+        "fontFamily": "Manrope, Arial, sans-serif",
+        "fontSize": "46.08px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "lineHeight": "50.688px",
+        "letterSpacing": "-1.8432px",
+        "color": "rgb(241, 235, 223)"
+      },
+      "mainHeadingLargerThanSubheadings": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "allEightIdentical": true,
+      "headingStyle": {
+        "fontFamily": "Manrope, Arial, sans-serif",
+        "fontSize": "40.96px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "lineHeight": "45.056px",
+        "letterSpacing": "-1.6384px",
+        "color": "rgb(241, 235, 223)"
+      },
+      "mainHeadingLargerThanSubheadings": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "allEightIdentical": true,
+      "headingStyle": {
+        "fontFamily": "Manrope, Arial, sans-serif",
+        "fontSize": "34px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "lineHeight": "37.4px",
+        "letterSpacing": "-1.36px",
+        "color": "rgb(241, 235, 223)"
+      },
+      "mainHeadingLargerThanSubheadings": true,
+      "noOverflow": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "allEightIdentical": true,
+      "headingStyle": {
+        "fontFamily": "Manrope, Arial, sans-serif",
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "lineHeight": "40.32px",
+        "letterSpacing": "-1.44px",
+        "color": "rgb(241, 235, 223)"
+      },
+      "mainHeadingLargerThanSubheadings": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "allEightIdentical": true,
+      "headingStyle": {
+        "fontFamily": "Manrope, Arial, sans-serif",
+        "fontSize": "28.86px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "lineHeight": "32.3232px",
+        "letterSpacing": "-1.1544px",
+        "color": "rgb(241, 235, 223)"
+      },
+      "mainHeadingLargerThanSubheadings": true,
+      "noOverflow": true
+    },
+    {
+      "width": 360,
+      "height": 640,
+      "allEightIdentical": true,
+      "headingStyle": {
+        "fontFamily": "Manrope, Arial, sans-serif",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "lineHeight": "31.36px",
+        "letterSpacing": "-1.12px",
+        "color": "rgb(241, 235, 223)"
+      },
+      "mainHeadingLargerThanSubheadings": true,
+      "noOverflow": true
+    }
+  ]
+}

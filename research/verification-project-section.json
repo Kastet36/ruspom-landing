@@ -1,0 +1,91 @@
+[
+  {
+    "width": 1920,
+    "height": 1080,
+    "sectionHeight": 921,
+    "imageWidth": 888,
+    "imageHeight": 666,
+    "imageFullyVisible": true,
+    "sharedPageGrid": true,
+    "noOverflow": true,
+    "noLeadForms": true,
+    "catalogueNavigation": true
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "sectionHeight": 791,
+    "imageWidth": 726,
+    "imageHeight": 544,
+    "imageFullyVisible": true,
+    "sharedPageGrid": true,
+    "noOverflow": true,
+    "noLeadForms": true,
+    "catalogueNavigation": true
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "sectionHeight": 724,
+    "imageWidth": 644,
+    "imageHeight": 483,
+    "imageFullyVisible": true,
+    "sharedPageGrid": true,
+    "noOverflow": true,
+    "noLeadForms": true,
+    "catalogueNavigation": true
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "sectionHeight": 661,
+    "imageWidth": 491,
+    "imageHeight": 368,
+    "imageFullyVisible": true,
+    "sharedPageGrid": true,
+    "noOverflow": true,
+    "noLeadForms": true,
+    "catalogueNavigation": true
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "sectionHeight": 1148,
+    "imageWidth": 728,
+    "imageHeight": 546,
+    "imageFullyVisible": true,
+    "sharedPageGrid": true,
+    "noOverflow": true,
+    "noLeadForms": true,
+    "catalogueNavigation": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "sectionHeight": 923,
+    "imageWidth": 350,
+    "imageHeight": 263,
+    "imageFullyVisible": true,
+    "sharedPageGrid": true,
+    "noOverflow": true,
+    "noLeadForms": true,
+    "catalogueNavigation": true
+  },
+  {
+    "width": 360,
+    "height": 640,
+    "sectionHeight": 961,
+    "imageWidth": 320,
+    "imageHeight": 240,
+    "imageFullyVisible": true,
+    "sharedPageGrid": true,
+    "noOverflow": true,
+    "noLeadForms": true,
+    "catalogueNavigation": true
+  },
+  {
+    "otherEightSectionsUnchanged": true,
+    "originalPhotoPreserved": true,
+    "realFloorPlanUnavailable": true
+  }
+]

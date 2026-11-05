@@ -1,0 +1,72 @@
+[
+  {
+    "width": 1680,
+    "height": 900,
+    "sectionHeight": 852,
+    "imageWidth": 960,
+    "imageHeight": 540,
+    "fitsViewport": true,
+    "noOverflow": true,
+    "slider": true
+  },
+  {
+    "width": 1440,
+    "height": 800,
+    "sectionHeight": 771,
+    "imageWidth": 782,
+    "imageHeight": 440,
+    "fitsViewport": true,
+    "noOverflow": true,
+    "slider": true
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "sectionHeight": 737,
+    "imageWidth": 725,
+    "imageHeight": 408,
+    "fitsViewport": true,
+    "noOverflow": true,
+    "slider": true
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "sectionHeight": 709,
+    "imageWidth": 640,
+    "imageHeight": 360,
+    "fitsViewport": true,
+    "noOverflow": true,
+    "slider": true
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "sectionHeight": 687,
+    "imageWidth": 640,
+    "imageHeight": 400,
+    "fitsViewport": true,
+    "noOverflow": true,
+    "slider": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "sectionHeight": 627,
+    "imageWidth": 350,
+    "imageHeight": 219,
+    "fitsViewport": true,
+    "noOverflow": true,
+    "slider": true
+  },
+  {
+    "width": 360,
+    "height": 640,
+    "sectionHeight": 606,
+    "imageWidth": 320,
+    "imageHeight": 200,
+    "fitsViewport": true,
+    "noOverflow": true,
+    "slider": true
+  }
+]

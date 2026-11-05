@@ -1,7 +1,11 @@
 [
   {
-    "src": "assets/cinema/house-08.webp",
+    "src": "assets/cinema/gallery-lead-08.webp",
     "caption": "Панорамное остекление"
+  },
+  {
+    "src": "assets/cinema/gallery-lead-14.webp",
+    "caption": "Открытая терраса"
   },
   {
     "src": "assets/cinema/house-12.webp",
@@ -30,10 +34,6 @@
   {
     "src": "assets/cinema/house-06.webp",
     "caption": "Фасад в вечернем освещении"
-  },
-  {
-    "src": "assets/cinema/house-14.webp",
-    "caption": "Открытая терраса"
   },
   {
     "src": "assets/cinema/house-13.webp",

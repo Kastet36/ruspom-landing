@@ -1,0 +1,32 @@
+[
+  {
+    "width": 1440,
+    "firstTwoRetouched": true,
+    "firstTwoMatchFullScreenAndThumbs": true,
+    "totalPhotos": 13,
+    "remainingElevenPreserved": true,
+    "viewerNavigation": true,
+    "keyboardHomeEnd": true,
+    "restorePageScroll": true,
+    "noOverflow": true
+  },
+  {
+    "width": 390,
+    "firstTwoRetouched": true,
+    "firstTwoMatchFullScreenAndThumbs": true,
+    "totalPhotos": 13,
+    "remainingElevenPreserved": true,
+    "viewerNavigation": true,
+    "keyboardHomeEnd": true,
+    "restorePageScroll": true,
+    "noOverflow": true
+  },
+  {
+    "nativeGallerySwipe": true,
+    "fullScreenSwipeBetweenRetouchedPair": true,
+    "noAccidentalViewerOpen": true
+  },
+  {
+    "otherEightSectionsUnchanged": true
+  }
+]
